@@ -1,0 +1,173 @@
+:root{
+    --main-background-color: #FFD500;
+    --main-title-color: #383838;
+    --main-input-color: #F5F8F9;
+    --main-border-radius: 3px;
+    --main-button-color: #60E6C5;
+    --main-white-color: #fff;
+}
+
+/* actor-regular - latin */
+@font-face {
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: 400;
+    src:
+         url('../fonts/actor-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/actor-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body{
+    font-family: 'Actor';
+    font-weight: 400;
+    background-color: rgba(128, 128, 128, 0.345);    
+}
+
+.container{
+    width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.contact__box{
+    display: flex;
+    width: 970px;
+    margin: 90px auto;
+    background-color: var(--main-white-color);
+    border-radius: 21.25px 0px 0px 21.25px;
+}
+
+.contact__info{
+    width: 376px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 21.25px 0px 0px 21.25px;
+    background-color: var(--main-background-color);
+    background-image: url("../Images/Woman-image.png");
+    background-repeat: no-repeat;
+    background-position: 130px 80px;
+}
+
+.contact__info-title{
+    padding-top: 226px;
+    font-size: 28px;
+    line-height: 22px;
+    align-items: flex-end;
+    text-align: center;
+    color: var(--main-title-color);
+}
+
+
+.contact__info-desc{
+    position: relative;
+    padding-bottom: 130px;
+    font-size: 18px;
+    line-height: 28px;
+    align-items: center;
+    text-align: center;
+    color: var(--main-title-color);
+}
+
+.contact__info-desc::after{
+    position: absolute;
+    content: "";
+    background: url("../Images/arrow.svg") no-repeat;
+    width: 32px;
+    height: 32px;
+    bottom: 70px;
+    left: 180px;
+}
+
+.contact__login{
+    width: 600px;
+}
+
+.form{
+    padding-top: 53px;
+    padding-left: 71px;
+}
+
+.form__contents{
+    margin-bottom: 20px;
+}
+
+.form__label{
+    font-size: 18px;
+    line-height: 9px;
+    color: #373D40;
+}
+
+.form__label__male{
+    margin-left: 100px;
+}
+
+
+
+.form__input{
+    width: 290px;
+    margin-left: 50px;
+    margin-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    background: var(--main-input-color);
+    border: 1px solid var(--main-input-color);
+    border-radius: var(--main-border-radius);
+}
+
+.form__name{
+    margin-left: 100px;
+}
+
+.form__email{
+    margin-left: 105px;
+}
+
+.form__mobile{
+    margin-left: 95px;
+}
+
+.form__id{
+    margin-left: 55px;
+}
+
+.form__membership{
+    margin-left: 70px;
+}
+
+.form__membership-silver{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.userGender{
+    display: flex;
+    align-items: center;
+}
+
+.form__buttons{
+    float: right;
+    margin-right: 90px;
+    padding-bottom: 55px;
+}
+
+.form__button{
+    width: 100px;
+    padding: 18px 25px;
+    border: none;
+    border-radius: var(--main-border-radius);
+    font-size: 16px;
+    line-height: 9px;
+}
+
+.form__button__cancel{
+    background-color: var(--main-input-color);
+}
+
+.form__button__save{
+    margin-left: 11px;
+    background-color: var(--main-button-color);
+    color: var(--main-input-color);
+}
